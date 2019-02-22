@@ -1,6 +1,6 @@
-'use strict';
-Object.defineProperty(exports, '__esModule', { value: true });
-const cli_1 = require('../../libs/cli');
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cli_1 = require("../../libs/cli");
 /**
  * Created by allen on 2016/11/13.
  */
