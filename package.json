@@ -31,8 +31,7 @@
         "through2-concurrent": "^1.1.1"
     },
     "scripts": {
-        "gen-typings": "tsc --declaration *.ts",
-        "test": "mocha"
+        "gen-typings": "tsc --declaration *.ts"
     },
     "typings": "./dist/index.d.ts"
 }
