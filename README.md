@@ -1,4 +1,8 @@
-# tinypng-loader
+# tinypng-loader-webpack
+
+Thanks for [tinypng-loader](https://github.com/jf3096/tinypng-loader), it's a really great project.
+However, gulp is no longer popular, and some of the project dependencies is deprecated, so I forked it and made it better.
+And I kept the former description in salute.
 
 PNG is useful because it's the only widely supported format that can store partially transparent images.
 When app moves to production stage, image compression is essential. However, according to my experience using
@@ -9,45 +13,32 @@ with around <b>60%-70%</b> file size reduction.
 Here is a [command line way](https://github.com/jf3096/tinypng-loader-cli) if you just want to quickly use it without any coding.
 
 ### Advantage
+
 By compare to other tinypng library, this library use a tinypng "loophole" API to compress images.
-Support popular build tools gulp and webpack so that developers can easily used this in and <b>only in Production stage</b> (Since this library rely on tinypng web api which require network accesss)
+Support popular build tools webpack so that developers can easily used this in and <b>only in Production stage</b> (Since this library rely on tinypng web api which require network accesss)
 
 ### Compatible Image
-* PNG
-* JP(E)G
+
+-   PNG
+-   JP(E)G
 
 ### Get Started
+
 ```bash
 npm install tinypng-loader --save-dev
 ```
 
 ### Support
-* Webpack
-* Gulp
+
+-   Webpack
 
 ### Language
-* Typescript
-* Javascript
 
-## Example
-
-### Gulp
-
-Added maxConcurrency as an option. By default its value is 10. <br />
-<strong>WARNING: due to the limit from tinypng.com, please keep this value under 20.</strong>
-
-```javascript
-    var gulp = require('gulp');
-    var gulpTinyPng = require('tinypng-loader/gulp/index');
-    gulp.task('tinypng', function(cb) {
-        gulp.src('test/img/**/*.png')
-            .pipe(gulpTinyPng({maxConcurrency: 10}))
-            .pipe(gulp.dest('test/dist'))
-            .on('end', cb);
-    });
-```
+-   Typescript
+-   Javascript
 
 ### Webpack
+
 ```javascript
     ...
     module:{
@@ -116,6 +107,7 @@ which allows to use MD5 to cache the result accordingly.
 ```
 
 ### Screenshot
+
 Here is a normal case if you use this library correctly
 ![alt tag](./git-img/success.png)
 
@@ -126,11 +118,11 @@ Any errors occured will be logged in console
 
 ## 1.0.9 (2018-01-10)
 
-* bug: fixed gulp in typescript require gulp options, which actually should be optional.
-* feat: optimize webpack logic. added validation constraints for tinypng loaders.
+-   bug: fixed gulp in typescript require gulp options, which actually should be optional.
+-   feat: optimize webpack logic. added validation constraints for tinypng loaders.
 
 ## 1.0.7 (2018-01-09)
 
-* bug: due to changes from tinypng api, it won't work for previous I fixed it and completed rewrite this tools.
-* feat: added support for webpack 3.
-* feat: added concurrency support for gulp when for batch processing images which require network download and upload speed.
+-   bug: due to changes from tinypng api, it won't work for previous I fixed it and completed rewrite this tools.
+-   feat: added support for webpack 3.
+-   feat: added concurrency support for gulp when for batch processing images which require network download and upload speed.

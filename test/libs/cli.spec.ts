@@ -1,4 +1,4 @@
-import {tinypngErrorLogger, tinypngLogger} from '../../libs/cli';
+import { tinypngErrorLogger, tinypngLogger } from '../../libs/cli';
 
 /**
  * Created by allen on 2016/11/13.
@@ -9,14 +9,14 @@ describe('cli', () => {
             tinypngLogger({
                 fileName: 'Test',
                 beforeSize: null,
-                afterSize: null
+                afterSize: null,
             });
         });
         it('parameter(s) <normal case> should pass', () => {
             tinypngLogger({
                 fileName: 'Test',
                 beforeSize: 10,
-                afterSize: 5
+                afterSize: 5,
             });
         });
     });
@@ -24,7 +24,7 @@ describe('cli', () => {
         it('parameter(s) <{fileName: Test, beforeSize: null, afterSize: null}> should pass', () => {
             tinypngErrorLogger({
                 fileName: 'Test',
-                errorMessage: null
+                errorMessage: null,
             });
         });
         it('parameter(s) <normal case> should pass', () => {
