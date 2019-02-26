@@ -90,3 +90,5 @@ fabric.properties
 .idea/tinypng-loader.time
 .idea/typescript-compiler.xml
 *.map
+
+.DS_Store

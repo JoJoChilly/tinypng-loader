@@ -106,14 +106,6 @@ which allows to use MD5 to cache the result accordingly.
     ...
 ```
 
-### Screenshot
-
-Here is a normal case if you use this library correctly
-![alt tag](./git-img/success.png)
-
-Any errors occured will be logged in console
-![alt tag](./git-img/error.png)
-
 ### ChangeLog
 
 ## 2.0.3 (2019-02-26)
