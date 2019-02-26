@@ -158,6 +158,30 @@ check-error@^1.0.2:
   resolved "https://registry.npmjs.org/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
   integrity sha1-V00xLt2Iu13YkS6Sht1sCu1KrII=
 
+clone-buffer@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/clone-buffer/download/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
+  integrity sha1-4+JbIHrE5wGvch4staFnksrD3Fg=
+
+clone-stats@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/clone-stats/download/clone-stats-1.0.0.tgz#b3782dff8bb5474e18b9b6bf0fdfe782f8777680"
+  integrity sha1-s3gt/4u1R04Yuba/D9/ngvh3doA=
+
+clone@^2.1.1:
+  version "2.1.2"
+  resolved "http://registry.npm.taobao.org/clone/download/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
+
+cloneable-readable@^1.0.0:
+  version "1.1.2"
+  resolved "http://registry.npm.taobao.org/cloneable-readable/download/cloneable-readable-1.1.2.tgz#d591dee4a8f8bc15da43ce97dceeba13d43e2a65"
+  integrity sha1-1ZHe5Kj4vBXaQ86X3O66E9Q+KmU=
+  dependencies:
+    inherits "^2.0.1"
+    process-nextick-args "^2.0.0"
+    readable-stream "^2.3.5"
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -333,7 +357,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@~2.0.3:
+inherits@2, inherits@^2.0.1, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
@@ -453,7 +477,7 @@ pathval@^1.1.0:
   resolved "https://registry.npmjs.org/pathval/-/pathval-1.1.0.tgz#b942e6d4bde653005ef6b71361def8727d0645e0"
   integrity sha1-uULm1L3mUwBe9rcTYd74cn0GReA=
 
-process-nextick-args@~2.0.0:
+process-nextick-args@^2.0.0, process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
   integrity sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
@@ -463,7 +487,7 @@ punycode@^2.1.0:
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-readable-stream@~2.3.6:
+readable-stream@^2.3.5, readable-stream@~2.3.6:
   version "2.3.6"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
   integrity sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
@@ -475,6 +499,16 @@ readable-stream@~2.3.6:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+remove-trailing-separator@^1.0.1:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/remove-trailing-separator/download/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
+  integrity sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
+
+replace-ext@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/replace-ext/download/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
+  integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
 
 revalidator@^0.3.1:
   version "0.3.1"
@@ -624,6 +658,18 @@ v8flags@^3.0.0:
   integrity sha512-MtivA7GF24yMPte9Rp/BWGCYQNaUj86zeYxV/x2RRJMKagImbbv3u8iJC57lNhWLPcGLJmHcHmFWkNsplbbLWw==
   dependencies:
     homedir-polyfill "^1.0.1"
+
+vinyl@^2.2.0:
+  version "2.2.0"
+  resolved "http://registry.npm.taobao.org/vinyl/download/vinyl-2.2.0.tgz#d85b07da96e458d25b2ffe19fece9f2caa13ed86"
+  integrity sha1-2FsH2pbkWNJbL/4Z/s6fLKoT7YY=
+  dependencies:
+    clone "^2.1.1"
+    clone-buffer "^1.0.0"
+    clone-stats "^1.0.0"
+    cloneable-readable "^1.0.0"
+    remove-trailing-separator "^1.0.1"
+    replace-ext "^1.0.0"
 
 wrappy@1:
   version "1.0.2"

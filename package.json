@@ -17,7 +17,8 @@
         "chai": "*",
         "mocha": "^4.1.0",
         "ts-node": "^4.1.0",
-        "typescript": "^2.6.2"
+        "typescript": "^2.6.2",
+        "vinyl": "^2.2.0"
     },
     "dependencies": {
         "axios": "^0.17.1",
