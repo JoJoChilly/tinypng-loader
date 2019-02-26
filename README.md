@@ -25,7 +25,7 @@ Support popular build tools webpack so that developers can easily used this in a
 ### Get Started
 
 ```bash
-npm install tinypng-loader --save-dev
+npm install tinypng-loader-webpack --save-dev
 ```
 
 ### Support
@@ -44,7 +44,7 @@ npm install tinypng-loader --save-dev
     module:{
         ... //webpack loader starts from here
         {
-           test: /\.png$/,
+           test: /\.(png|jpe?g)(\?.*)?$/,
            loader: 'file!tinypng'
         },
         ... //end of webpack loader
@@ -64,9 +64,9 @@ npm install tinypng-loader --save-dev
                 }
             },
             {
-                loader: 'tinypng-loader',
+                loader: 'tinypng-loader-loader',
                 options: {
-                    test: /\.png$/
+                    test: /\.(png|jpe?g)(\?.*)?$/
                 },
             }
         ]
@@ -96,9 +96,9 @@ which allows to use MD5 to cache the result accordingly.
                     }
                 },
                 {
-                    loader: 'tinypng-loader',
+                    loader: 'tinypng-loader-loader',
                     options: {
-                        test: /\.png$/
+                        test: /\.(png|jpe?g)(\?.*)?$/
                     },
                 }
             ]
@@ -116,13 +116,10 @@ Any errors occured will be logged in console
 
 ### ChangeLog
 
-## 1.0.9 (2018-01-10)
+## 2.0.2 (2019-02-26)
 
--   bug: fixed gulp in typescript require gulp options, which actually should be optional.
--   feat: optimize webpack logic. added validation constraints for tinypng loaders.
+-   fix: include dependency vinyl
 
-## 1.0.7 (2018-01-09)
+## 2.0.0 (2019-02-22)
 
--   bug: due to changes from tinypng api, it won't work for previous I fixed it and completed rewrite this tools.
--   feat: added support for webpack 3.
--   feat: added concurrency support for gulp when for batch processing images which require network download and upload speed.
+-   feat: fork from tinypng-loader and update test, some packages, together with remove gulp configs
