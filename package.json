@@ -3,9 +3,7 @@
     "version": "2.0.3",
     "description": "A tinypng free processor.",
     "main": "webpack/index.js",
-    "directories": {
-        "test": "test"
-    },
+    "repository": "JoJoChilly/tinypng-loader-webpack",
     "files": [
         "webpack",
         "libs"
