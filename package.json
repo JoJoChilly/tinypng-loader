@@ -17,8 +17,7 @@
         "chai": "*",
         "mocha": "^4.1.0",
         "ts-node": "^4.1.0",
-        "typescript": "^2.6.2",
-        "vinyl": "^2.2.0"
+        "typescript": "^2.6.2"
     },
     "dependencies": {
         "axios": "^0.17.1",
@@ -29,7 +28,8 @@
         "revalidator": "^0.3.1",
         "schema-utils": "^0.4.3",
         "text-encoding": "^0.7.0",
-        "through2-concurrent": "^1.1.1"
+        "through2-concurrent": "^1.1.1",
+        "vinyl": "^2.2.0"
     },
     "scripts": {
         "gen-typings": "tsc --declaration *.ts"
